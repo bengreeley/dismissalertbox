@@ -1,0 +1,110 @@
+#homeMessage {
+	background: none repeat scroll 0 0 rgba(0,40,120, .85);
+	padding: 12px 20px 20px 20px;
+	position: fixed;
+	max-width: 400px;
+	width: 80%;
+	min-height: 120px;
+	bottom: 0;
+	-webkit-box-shadow: 10px 10px 25px -15px rgba(0,0,0,0.66);
+	-moz-box-shadow: 10px 10px 25px -15px rgba(0,0,0,0.66);
+	box-shadow: 10px 10px 25px -15px rgba(0,0,0,0.66);
+	z-index: 4000;
+}
+
+a#home-close-icon {
+	float:right;
+	display:block;
+	background: url('../images/message-close-icon-white.png') no-repeat;
+	width: 18px;
+	height: 18px;
+}
+
+a#home-close-icon:hover {
+	opacity: .6;
+}
+
+h4#homeMessageHeader {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	color: #fff;
+	margin: 0 0 15px 0;
+	padding-top: 15px;
+	line-height: 0;
+}
+
+#homeMessageText {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	color: #fff;
+	font-size: .95em;
+	line-height: 1.6em;
+}
+
+#homeMessageText a {
+	color: #D87900;
+}
+
+/* Sliding animations */
+.stretchRight{
+	animation-name: stretchRight;
+	-webkit-animation-name: stretchRight;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+	-webkit-transform-origin: 0% 0%; 		
+}
+
+@keyframes stretchRight {
+	0% {
+		transform: scaleX(0.3);
+	}
+	40% {
+		transform: scaleX(1.02);
+	}
+	60% {
+		transform: scaleX(0.98);
+	}
+	80% {
+		transform: scaleX(1.01);
+	}
+	100% {
+		transform: scaleX(0.98);
+	}				
+	80% {
+		transform: scaleX(1.01);
+	}
+	100% {
+		transform: scaleX(1);
+	}							
+}
+
+@-webkit-keyframes stretchRight {
+	0% {
+		-webkit-transform: scaleX(0.3);
+	}
+	40% {
+		-webkit-transform: scaleX(1.02);
+	}
+	60% {
+		-webkit-transform: scaleX(0.98);
+	}
+	80% {
+		-webkit-transform: scaleX(1.01);
+	}
+	100% {
+		-webkit-transform: scaleX(0.98);
+	}				
+	80% {
+		-webkit-transform: scaleX(1.01);
+	}
+	100% {
+		-webkit-transform: scaleX(1);
+	}		
+}
