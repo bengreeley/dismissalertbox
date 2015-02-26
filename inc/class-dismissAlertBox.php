@@ -16,7 +16,7 @@ class dismissAlertBox {
 	}
 
 	private function define_admin_hooks() {
-		ini_set('display_errors',1);
+
 		if( is_admin() ) {
 			// Options...
 			require_once( plugin_dir_path( __FILE__ ) . 'admin/class-dismissAlertBox-options.php' );			
@@ -74,7 +74,7 @@ class dismissAlertBox {
 			
 			while ( $alertQuery->have_posts() ) {
 				$alertQuery->the_post();
-				echo 'here';
+
 				$expirationDate = get_post_meta( get_the_id(), '_dismissalertbox_expirationdate', true );
 
 				if( !strlen( $expirationDate ) || ( strlen( $expirationDate ) && $expirationDate > strtotime( 'now' ) ) ) {
